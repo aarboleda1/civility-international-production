@@ -11,21 +11,21 @@ export class ChaptersComponent implements OnInit {
     {
       name: "Miami University Oxford",
       url: "https://www.facebook.com/MUProjectCivility",
-      imageUrl: "../assets/images/chapters/miamiUniversity.jpg",
+      imageUrl: "https://s27.postimg.org/p6mjbnw67/miami_University.jpg",
       members: 15,
       adminName: "Shar Qureshi"
     },
     {
       name: "Miami University Hamilton",
       url: "https://www.facebook.com/MUProjectCivility",
-      imageUrl: "../assets/images/chapters/miamiHamilton.jpg",
+      imageUrl: "https://s27.postimg.org/8sxyerqn3/miami_Hamilton.jpg",
       members: 22,
       adminName: "Shan Qureshi"
     },
     {
       name: "Miami University Middletown",
       url: "https://www.facebook.com/MUProjectCivility",
-      imageUrl: "../assets/images/chapters/miamiMiddletown.jpg",
+      imageUrl: "https://s27.postimg.org/e5msswejj/miami_Middletown.jpg",
       members: 18,
       adminName: "Sandra Bullock"
     }
