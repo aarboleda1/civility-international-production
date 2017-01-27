@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+
+<h1 class="heading">Careers Opportunities</h1>
+
+<md-card class="career-card" *ngFor="let career of careerOpportunities">
+  <md-card-title>{{ career.title }}</md-card-title>
+  <p><strong>Location:</strong> {{ career.location }}</p>
+  <p><strong>Description:</strong> {{ career.description }}</p>
+  <p>Please get in touch with your email and a short note at contact@civilityinternational.org</p>
+</md-card>
+
+<app-footer></app-footer>

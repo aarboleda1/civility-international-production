@@ -1,0 +1,22 @@
+<div class="landingImage">
+  <span><h1 class="heading">What We Do</h1></span>
+</div>
+
+<md-card class="whatWeDo-card">
+  <h4>Find out how CI fights for civility and tolerance, every day, across the United States.</h4>
+
+  <h2 class="secondary-heading">Civility International's Work</h2>
+
+  <h4>Explore our work to see the programs we create.</h4>
+</md-card>
+
+<md-grid-list cols="8" rowHeight="100px" class="grid">
+  <md-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+      class="grid-tile">
+    <h2>{{ tile.text }}</h2>
+  </md-grid-tile>
+</md-grid-list>

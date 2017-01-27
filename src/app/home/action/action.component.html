@@ -1,0 +1,32 @@
+<div class="landingImage">
+  <span><h1 class="heading" style="color: white;">Take Action</h1></span>
+</div>
+
+<md-card class="whatWeDo-card">
+  <h2 class="secondary-heading">Become a donor</h2>
+  <h4>Join us to make a direct impact on the biggest problem that's plaguing the world today.</h4>
+  <button md-raised-button color="accent">Donate</button>
+</md-card>
+
+<div class="get-involved-section">
+  <h2 class="heading" style="padding-top: 0;">Get Involved</h2>
+  <md-grid-list cols="6" rowHeight="200px" class="grid">
+    <md-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color"
+        class="grid-tile">
+      <img src="{{ tile.img }}" class="image" />
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+
+<div>
+  <h2 class="secondary-heading">Work at Civility International</h2>
+
+  <div class="action-div">
+    <h4>Want to help us change the world? Explore current <a href="">job listings with Civility International</a>.</h4>
+  </div>
+
+</div>

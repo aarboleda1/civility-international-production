@@ -1,0 +1,8 @@
+<md-card *ngFor="let article of articles" class="news-card">
+  <md-card-title>
+    {{ article.title }}
+    <span style="float: right; font-size: 14px;">{{ article.date }}</span>
+  </md-card-title>
+  <md-card-subtitle>{{ article.exampleText }}</md-card-subtitle> 
+  <button md-raised-button color="accent" target="_blank" class="link" href="article.url">Read on</button>
+</md-card>
