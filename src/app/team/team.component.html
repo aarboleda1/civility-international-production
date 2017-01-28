@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
-<h1 class="headings">Our Team</h1>
-<md-card class="team-card" *ngFor="let member of teams">
+<h1 class="heading">Our Team</h1>
+<md-card class="team-card" *ngFor="let member of team">
     <img src="{{ member.background }}" class="team-background" />
     <md-card-title>{{ member.name }}</md-card-title>
 </md-card>
