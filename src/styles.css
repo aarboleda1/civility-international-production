@@ -34,3 +34,15 @@ body {
 md-card {
     border: ridge;
 }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    border-bottom: 3px solid #1CABE2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
