@@ -51,7 +51,7 @@ export class TeamComponent implements OnInit {
     {
       name: "Rebecca Huff",
       background: "https://s27.postimg.org/5nhy2axer/shar_cover.jpg",
-      image: "https://s27.postimg.org/8ewmf66jn/kofi.jpg",
+      image: "http://i63.tinypic.com/2viih3t.jpg",
       location: "Cincinnati, OH",
       role: "Community Manager",
       email: "rebecca@civilityinternational.org"
