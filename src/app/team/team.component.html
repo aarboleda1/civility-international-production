@@ -4,6 +4,10 @@
 <md-card class="team-card" *ngFor="let member of team">
     <img src="{{ member.background }}" class="team-background" />
     <md-card-title>{{ member.name }}</md-card-title>
+    <md-card-description>{{ member.role }}</md-card-description>
+    <md-card-description>{{ member.image }}</md-card-description>
+    <md-card-description>{{ member.location }}</md-card-description>
+    <md-card-description>{{ member.role }}</md-card-description>
 </md-card>
 
 <app-footer></app-footer>
