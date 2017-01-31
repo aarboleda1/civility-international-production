@@ -21,6 +21,7 @@ import { ActionComponent } from './home/action/action.component';
 import { ResearchComponent } from './home/research/research.component';
 import { CareersComponent } from './careers/careers.component';
 import { AboutComponent } from './about/about.component';
+import { PartnersComponent } from './partners/partners.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     ActionComponent,
     ResearchComponent,
     CareersComponent,
-    AboutComponent
+    AboutComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,
