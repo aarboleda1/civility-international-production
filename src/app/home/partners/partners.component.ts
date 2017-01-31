@@ -13,6 +13,9 @@ export class PartnersComponent implements OnInit {
     },
     {
       logo: 'http://www.q-enterprise.com/images/img7.jpg'
+    },
+    {
+      logo: 'http://i67.tinypic.com/350mntc.jpg'
     }
   ]
 
