@@ -1,13 +1,20 @@
 <app-navbar></app-navbar>
 
 <h1 class="heading">Our Team</h1>
-<md-card class="team-card" *ngFor="let member of team">
-    <img src="{{ member.background }}" class="team-background" />
-    <md-card-title>{{ member.name }}</md-card-title>
-    <p>{{ member.role }}</p>
-    <p>{{ member.image }}</p>
-    <p>{{ member.location }}</p>
-    <p>{{ member.role }}</p>
-</md-card>
+<div style="text-align: center;">
+    <div class="flex-container" fxLayout="row" fxLayoutAlign="center center">
+        <md-card class="flex-item newCard" *ngFor="let member of team">
+            <img src="{{ member.background }}" class="team-background" />
+            <img src="{{ member.image }}" class="member-picture" />
+            
+            <md-card-title>{{ member.name }}</md-card-title>
+            <p>
+                {{ member.role }} <br />
+                {{ member.location }} <br />
+                {{ member.email }} <br />
+            </p>
+        </md-card>
+    </div>
+</div>
 
 <app-footer></app-footer>
