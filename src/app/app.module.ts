@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+import { ChartsModule } from 'ng2-charts';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -22,12 +23,14 @@ import { ResearchComponent } from './home/research/research.component';
 import { CareersComponent } from './careers/careers.component';
 import { AboutComponent } from './about/about.component';
 import { PartnersComponent } from './home/partners/partners.component';
+import { CostsComponent } from './costs/costs.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'team', component: TeamComponent }
+  { path: 'team', component: TeamComponent },
+  { path: 'transparency', component: CostsComponent }
 ];
 
 @NgModule({
@@ -47,14 +50,16 @@ const appRoutes: Routes = [
     ResearchComponent,
     CareersComponent,
     AboutComponent,
-    PartnersComponent
+    PartnersComponent,
+    CostsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
