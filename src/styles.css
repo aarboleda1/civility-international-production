@@ -63,3 +63,49 @@ md-card {
     margin-right: auto;
     width: 50%;
 }
+
+/* Loading page */
+.loading-text {
+  font-weight: 100;
+  font-size: 2.75rem;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #45A4DB;
+  animation: headerblink 4s infinite ease-in-out;
+} 
+.dot {
+  position:absolute;
+  top: 50%;
+  left: 10%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #45A4DB;
+  display: inline-block;
+  animation: dotmove infinite 4s ease-in-out;
+}
+
+.dot:nth-child(1){
+  animation-delay:.4s;
+}
+.dot:nth-child(2){
+  animation-delay:.2s;
+}
+.dot:nth-child(4){
+  animation-delay:-.2s;
+}
+.dot:nth-child(5){
+  animation-delay:-.4s;
+}
+@keyframes dotmove{
+  0%{left:-1%;opacity:.1}
+  50%{left:49%;opacity:1}
+  100%{left:101%;opacity:.1}
+}
+@keyframes headerblink {
+  0%{opacity: .3}
+  50%{opacity: 1}
+  100%{opacity: .3}
+}
