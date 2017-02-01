@@ -16,6 +16,9 @@ export class PartnersComponent implements OnInit {
     },
     {
       logo: 'http://i67.tinypic.com/350mntc.jpg'
+    },
+    {
+      logo: 'https://healthyu.io/images/HealthyUlogo.jpg'
     }
   ]
 
