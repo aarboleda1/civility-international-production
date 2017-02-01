@@ -55,7 +55,23 @@ export class TeamComponent implements OnInit {
       location: "Cincinnati, OH",
       role: "Community Manager",
       email: "rebecca@civilityinternational.org"
-    }
+    },
+    {
+      name: "John Huynh",
+      background: "https://s27.postimg.org/wnvqqvlpf/mitrakos_cover.jpg",
+      image: "http://i68.tinypic.com/2nisn6x.jpg",
+      location: "Los Angeles",
+      role: "Software Engineer",
+      email: "john@civilityinternational.org"
+    },
+    {
+      name: "Chris Phan",
+      background: "https://s27.postimg.org/wnvqqvlpf/mitrakos_cover.jpg",
+      image: "http://i68.tinypic.com/25ppc7n.jpg",
+      location: "Los Angeles",
+      role: "Software Engineer",
+      email: "chris@civilityinternational.org"
+    },
   ]
 
   constructor() { }
