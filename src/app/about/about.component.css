@@ -2,10 +2,15 @@
     text-align: center;
     width: 80%;
     margin-bottom: 40px;
+    padding: 20px;
 }
 
 .mission {
     text-align: center;
     width: 80%;
     margin-bottom: 40px;
+}
+
+.mission p {
+    font-size: 20px;
 }
