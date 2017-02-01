@@ -31,6 +31,23 @@ body {
     color: darkslategray;
 }
 
+.secondary-heading {
+    margin-top: 0;
+    padding-top: 5%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 45px;
+    color: darkslategray;
+}
+
+.thirdary-heading {
+    margin-top: 0;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 25px;
+    color: darkslategray;
+}
+
 md-card {
     border: ridge;
 }

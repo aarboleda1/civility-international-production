@@ -1,39 +1,36 @@
 <app-navbar></app-navbar>
 
-<div style="display: block">
+<h1 class="heading">Transparency</h1>
+
+<p class="center intro">Here at Civility International, we want to be as up front about our inner workings as possible. We believe that this creates an environment of trust and transparency between us, our employees, donors and the world.</p>
+
+<div class="divider"></div>
+
+<h3 class="secondary-heading">Financial Transparency</h3>
+
+<h5 class="thirdary-heading">Breakdown of expenses</h5>
+<div style="display: block" class="chart center">
   <canvas baseChart
-              [data]="doughnutChartData"
-              [labels]="doughnutChartLabels"
-              [chartType]="doughnutChartType"
-              (chartHover)="chartHovered($event)"
-              (chartClick)="chartClicked($event)"></canvas>
+    [data]="doughnutChartData"
+    [labels]="doughnutChartLabels"
+    [chartType]="doughnutChartType"
+    (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)">
+  </canvas>
 </div>
 
-
-
-<br>
-
-  <div class="col-md-6">
- 
+<h5 class="thirdary-heading">Income vs Expenses by month</h5>
+<div style="display: block" class="chart center">
+  <div style="display: block">
     <canvas baseChart
-                [data]="lineChartData"
-                [labels]="lineChartLabels"
-                [options]="lineChartOptions"
-                [chartType]="lineChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
   </div>
-  <div class="col-md-6">
-    <canvas baseChart
-                [data]="pieChartData"
-                [labels]="pieChartLabels"
-                [chartType]="pieChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-  </div>
-  <div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">
-    <button (click)="randomizeType()" style="display: inline-block">Toggle</button>
-  </div>
-
+</div>
 
 <app-footer></app-footer>

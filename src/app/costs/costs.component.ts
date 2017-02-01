@@ -7,25 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CostsComponent implements OnInit {
 
-  public doughnutChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData:number[] = [350, 450, 100];
+  // Doughnut chart
+  public doughnutChartLabels:string[] = ['Advertising', 'Overhead', 'Salaries'];
+  public doughnutChartData:number[] = [15, 25, 0];
   public doughnutChartType:string = 'doughnut';
 
-  public lineChartData:Array<any> = [
-    [65, 59, 80, 81, 56, 55, 40],
-    [28, 48, 40, 19, 86, 27, 90]
+  public barChartLabels:string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  public barChartType:string = 'bar';
+  public barChartLegend:boolean = true;
+ 
+  public barChartData:any[] = [
+    {data: [0, 1800], label: 'Income'},
+    {data: [0, 25], label: 'Expenses'}
   ];
-  public lineChartLabels:Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  public lineChartType:string = 'line';
-  public pieChartType:string = 'pie';
  
-  // Pie
-  public pieChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-  public pieChartData:number[] = [300, 500, 100];
- 
-  public randomizeType():void {
-    this.lineChartType = this.lineChartType === 'line' ? 'bar' : 'line';
-    this.pieChartType = this.pieChartType === 'doughnut' ? 'pie' : 'doughnut';
+  public randomize():void {
+    // Only Change 3 values
+    let data = [
+      Math.round(Math.random() * 100),
+      59,
+      80,
+      (Math.random() * 100),
+      56,
+      (Math.random() * 100),
+      40];
+    let clone = JSON.parse(JSON.stringify(this.barChartData));
+    clone[0].data = data;
+    this.barChartData = clone;
+    /**
+     * (My guess), for Angular to recognize the change in the dataset
+     * it has to change the dataset variable directly,
+     * so one way around it, is to clone the data, change it and then
+     * assign it;
+     */
   }
  
   // events

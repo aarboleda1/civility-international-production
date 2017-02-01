@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
-import { ChartsModule } from 'ng2-charts';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
