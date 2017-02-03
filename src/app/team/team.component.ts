@@ -19,8 +19,8 @@ export class TeamComponent implements OnInit {
     {
       name: "Michael Mitrakos",
       background: "https://s27.postimg.org/wnvqqvlpf/mitrakos_cover.jpg",
-      image: "https://s27.postimg.org/4ca6tu1sz/mitrakos.jpg",
-      location: "Los Angeles",
+      image: "http://i68.tinypic.com/6stm6o.jpg",
+      location: "Los Angeles, CA",
       role: "Co-Founder & CTO",
       email: "michael@civilityinternational.org"
     },
@@ -60,7 +60,7 @@ export class TeamComponent implements OnInit {
       name: "John Huynh",
       background: "https://s27.postimg.org/wnvqqvlpf/mitrakos_cover.jpg",
       image: "http://i68.tinypic.com/2nisn6x.jpg",
-      location: "Los Angeles",
+      location: "Los Angeles, CA",
       role: "Software Engineer",
       email: "john@civilityinternational.org"
     },
@@ -68,7 +68,7 @@ export class TeamComponent implements OnInit {
       name: "Chris Phan",
       background: "https://s27.postimg.org/wnvqqvlpf/mitrakos_cover.jpg",
       image: "http://i68.tinypic.com/25ppc7n.jpg",
-      location: "Los Angeles",
+      location: "Los Angeles, CA",
       role: "Software Engineer",
       email: "chris@civilityinternational.org"
     },
