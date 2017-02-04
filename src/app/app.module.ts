@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { TeamComponent } from './team/team.component';
+import { TeamComponent } from './home/team/team.component';
 import { DonateComponent } from './donate/donate.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArticlesComponent } from './articles/articles.component';
@@ -29,7 +29,6 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'team', component: TeamComponent },
   { path: 'transparency', component: CostsComponent }
 ];
 
