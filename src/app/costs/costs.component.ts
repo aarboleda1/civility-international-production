@@ -17,8 +17,8 @@ export class CostsComponent implements OnInit {
   public barChartLegend:boolean = true;
  
   public barChartData:any[] = [
-    {data: [0, 1800], label: 'Income'},
-    {data: [0, 25], label: 'Expenses'}
+    {data: [0, 1550], label: 'Income'},
+    {data: [0, 100], label: 'Expenses'}
   ];
  
   public randomize():void {
@@ -30,7 +30,9 @@ export class CostsComponent implements OnInit {
       (Math.random() * 100),
       56,
       (Math.random() * 100),
-      40];
+      40
+    ];
+    
     let clone = JSON.parse(JSON.stringify(this.barChartData));
     clone[0].data = data;
     this.barChartData = clone;
