@@ -1,8 +1,9 @@
 .landingImage {
     width: 100%;
-    background-image: url('https://s27.postimg.org/i8if5py1v/one.png');
-    min-height: 400px;
-    background-size: 100% 105%;
+    background-image: url('https://s30.postimg.org/4iyowl18x/children.jpg');
+    background-size: 100%;
+    min-height: 450px;
+    background-repeat: no-repeat;
     margin-top: 0;
 }
 
@@ -21,4 +22,9 @@
     margin-left: auto;
     margin-right: auto;
     border: ridge;
+}
+
+.tile-image {
+    height: 130px;
+    width: 100%;
 }

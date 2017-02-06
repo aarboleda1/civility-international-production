@@ -14,3 +14,12 @@
 .mission p {
     font-size: 20px;
 }
+
+.landingImage {
+    width: 100%;
+    background-image: url('https://s24.postimg.org/jdveofrn9/worldhand2.jpg');
+    background-size: 100%;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
